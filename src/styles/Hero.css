@@ -1,0 +1,39 @@
+.hero-section {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to bottom, #0a0a0a, #111111);
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #FFD700;
+  text-shadow: 0 0 10px #FFD700;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FFD700;
+  box-shadow: 0 0 15px #FFD700;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #FFD700; }
+  to { text-shadow: 0 0 25px #FFD700, 0 0 35px #FFD700; }
+}
